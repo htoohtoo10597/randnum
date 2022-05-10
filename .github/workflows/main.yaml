@@ -40,7 +40,7 @@ jobs:
                   "type": "section",
                   "text": {
                     "type": "mrkdwn",
-                    "text": "Name: ${{ env.Name }}\nMatriculation: ${{ env.M_Num }}\nEmail: ${{ env.MyEmail }}\nRepo: ${{ env.Repo }}\nImage name: ${{ env.Image_Name }}\nImage url: ${{ env.Image_URL }}"
+                    "text": "Name: ${{ env.Name }}\nMatriculation: ${{ env.M_Num }}\nEmail: ${{ env.MyEmail }}\nRepo: ${{ env.MyRepo }}\nImage name: ${{ env.MyImageName }}\nImage url: ${{ env.MyImage_URL }}"
                   }
                 }
               ]
@@ -48,11 +48,11 @@ jobs:
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
-          Name: Htoo
+          Name: Htoo Eain Si Lwin
           M_Num: A0249489
-          MyEmail: E0941682@U.NUS.EDU
-          Repo: git@github.com:htoohtoo10597/randnum.git
-          Image_Name: htoo123/randnum:${{ github.ref_name }} 
-          Image_URL: https://hub.docker.com/repository/docker/htoo123/randnum/general
+          MyEmail: E0941682@u.nus.edu
+          MyRepo: git@github.com:htoohtoo10597/randnum.git
+          MyImageName: htoo123/randnum:${{ github.ref_name }} 
+          MyImage_URL: https://hub.docker.com/repository/docker/htoo123/randnum/general
           
           
