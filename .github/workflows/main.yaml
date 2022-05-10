@@ -1,6 +1,6 @@
 name: CICD workshop
 on:  
-  push: 
+  release: 
 jobs: 
   docker:
     runs-on: ubuntu-latest 
