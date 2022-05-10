@@ -53,6 +53,4 @@ jobs:
           MyEmail: E0941682@u.nus.edu
           MyRepo: git@github.com:htoohtoo10597/randnum.git
           MyImageName: htoo123/randnum:${{ github.ref_name }} 
-          MyImage_URL: https://hub.docker.com/repository/docker/htoo123/randnum/general
-          
-          
+          MyImage_URL: https://hub.docker.com/repository/docker/htoo123/randnum
