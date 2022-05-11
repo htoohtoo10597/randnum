@@ -1,6 +1,6 @@
 name: CICD workshop
 on:  
-  release: 
+  push: 
 jobs: 
   docker:
     runs-on: ubuntu-latest 
@@ -49,7 +49,7 @@ jobs:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}  
           SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
           Name: Htoo Eain Si Lwin
-          M_Num: A0249489
+          M_Num: A0249489E
           MyEmail: E0941682@u.nus.edu
           MyRepo: git@github.com:htoohtoo10597/randnum.git
           MyImageName: htoo123/randnum:${{ github.ref_name }} 
